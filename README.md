@@ -12,13 +12,11 @@ iOS 9.0+
 Each API is a static method, which is called through BluetoothSDK#method. Try to call SDK methods in the same thread, such as the main thread. All time-consuming operations of the SDK will be performed in the sub thread, so don't worry about the problem of performance caused by calling methods in the main thread.
 ### Setup SDK
 1. Init the SDK: ```
-   /**
-     * Init SDK, it is usually called in onCreate of class application.
-     *
-     * @param application Application
-     * @param maxMTU      each product has a max mtu, please contact us.
-     */
-    public static void init(Application application, int maxMTU)
+    // Init SDK, it is usually called in onCreate of class application.
+    //
+    // @param application Application
+    // @param maxMTU each product has a max mtu, please contact us.
+    public static void init(Application application, int maxMTU);
  ```<br>
 **It should be called when APP did finish launching.**
 2. When you no longer need to use the SDK, call ```[[HwBluetoothSDK sharedInstance] destroySDK] ```<br>
