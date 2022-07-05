@@ -1,0 +1,13 @@
+Installation
+
+Add BluetoothSDK-release.aar file to libs folder of your project.
+Add a path to the dependency in your app's build.gradle file. For example:
+
+dependencies {
+    implementation files('libs/BluetoothSDK-release.aar')
+}
+
+Requirements
+
+minSdkVersion: 21+
+targetSdkVersion: 31+

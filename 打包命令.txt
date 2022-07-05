@@ -1,0 +1,4 @@
+项目根目录下执行：
+./gradlew :BluetoothSDK:assemble
+AAR包文件生成路径：
+BluetoothSDK\build\outputs\aar\BluetoothSDK-release.aar
